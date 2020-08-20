@@ -9,10 +9,10 @@ Usage
 -----
 
 ```kotlin
-val resourceConfig = new ResourceConfig();
+val resourceConfig = ResourceConfig()
 
-resourceConfig.register(Json.asMessageBodyReader(APPLICATION_JSON_TYPE));
-resourceConfig.register(Json.asMessageBodyWriter(APPLICATION_JSON_TYPE));
+resourceConfig.register(Json.asMessageBodyReader(APPLICATION_JSON_TYPE))
+resourceConfig.register(Json.asMessageBodyWriter(APPLICATION_JSON_TYPE))
 ```
 
 _(This example uses Jersey, but any JAX-RS-compatible implementation will work.)_
